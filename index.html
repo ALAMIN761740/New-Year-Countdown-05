@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scene">
+        <header class="brand">
+            <h1>New Year Countdown</h1>
+            <p class="subtitle">A bright, joyful countdown to the next year</p>
+        </header>
+
+        <main class="countdown" role="timer" aria-live="polite">
+            <div class="time-row" id="timeRow">
+                <div class="time-segment"><span class="value" id="days">0</span><span class="label">Days</span></div>
+                <div class="time-segment"><span class="value" id="hours">00</span><span class="label">Hours</span></div>
+                <div class="time-segment"><span class="value" id="minutes">00</span><span class="label">Minutes</span></div>
+                <div class="time-segment"><span class="value" id="seconds">00</span><span class="label">Seconds</span></div>
+            </div>
+            <div class="message" id="message"></div>
+        </main>
+
+        <section class="world" id="world">
+            <h2 class="section-title">World Clocks — কোথায় আগে New Year হচ্ছে</h2>
+            <div id="worldList" class="world-list"></div>
+        </section>
+
+        <footer class="footer">Made with cheer ✨</footer>
+    </div>
+
+    <canvas id="confetti"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
